@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey form - VAULT-TEC SHELTER</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">SHELTER RESIDENT REPORT</h1>
+    <p id="description">
+      Please complete the form with your information to enter the shelter database:
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Name">
+
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+
+      <label id="number-label" for="age">Age:</label>
+      <input type="number" id="number" name="age" min="1" max="100" required placeholder="Age">
+
+      <label for="gender">What's your gender?:</label>
+      <label class="gender" for="gender-male"> <input type="radio" id="gender-male" name="gender"
+          value="male">Male</label>
+      <label class="gender" for="gender-female"> <input type="radio" id="gender-female" name="gender"
+          value="female">Female</label>
+      <label class="gender" for="gender-Ghoul"> <input type="radio" id="gender-Ghoul" name="gender"
+          value="Ghoul">Ghoul</label>
+
+
+      <label for="special">S.P.E.C.I.A.L:</label>
+      <label for="strenght"><input type="checkbox" id="strenght" name="strenght" value="strenght">Strength</label>
+      <label for="reading"><input type="checkbox" id="perception" name="hobbies" value="perception">Perception</label>
+      <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports">Endurance</label>
+      <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports">Charisma</label>
+      <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports">Inteligence</label>
+      <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports">Agility</label>
+      <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports">Luck</label>
+
+      <label for="dropdown">Faction:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">(Choose your faction)</option>
+        <option value="student">Shelter Dweller</option>
+        <option value="employed">Brotherhood of Steel
+        </option>Enclave
+        </option>
+        <option value="unemployed">Shelter wasteland dwellers</option>
+      </select>
+
+      <label for="message">Details:</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Details extra information about its perks..."></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
